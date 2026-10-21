@@ -1,0 +1,1 @@
+var e=null;function t(){let t=new URLSearchParams(location.search).get(`cf_loc`);if(t)return Promise.resolve(t.toUpperCase());let n=window.__pmTrace;return e??=(n??fetch(`/cdn-cgi/trace`).then(e=>e.text())).then(e=>/^loc=(\S+)$/m.exec(e)?.[1]??``).catch(()=>``),e}export{t};

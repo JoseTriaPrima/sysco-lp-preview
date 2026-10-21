@@ -1,0 +1,1 @@
+function e(e,t,n,r={}){let{threshold:i=.3,once:a=!1}=r;if(window.matchMedia(`(prefers-reduced-motion: reduce)`).matches){t(!0);return}let o=new IntersectionObserver(([e])=>{e.isIntersecting?(t(!1),a&&o.disconnect()):n?.()},{threshold:i});o.observe(e)}export{e as t};

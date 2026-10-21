@@ -1,0 +1,1 @@
+import{n as e,t}from"./gsap.CoLNslfx.js";requestAnimationFrame(()=>{e.registerPlugin(t),window.matchMedia(`(prefers-reduced-motion: reduce)`).matches||e.from(`.why-card`,{opacity:0,y:32,duration:.65,stagger:.13,ease:`power3.out`,immediateRender:!1,scrollTrigger:{trigger:`.why-grid`,start:`top 82%`}})});
